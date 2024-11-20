@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+  min-height: 58px;
+}
+/* banner */
+.banner {
+  background: #0C0C0C;
+}
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-logo p, .banner-link {
+  font-family: "Roboto";
+}
+.banner-logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.banner-menu {
+  display: flex;
+  gap: 20px;
+}
+.banner-bar {
+  display: none;
+}
+/* banner end */
+/* navbar */
+.navbar {
+  background-color: #0C0C0C;
+}
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-logo {
+  font-size: 36px;
+  font-family: "Roboto";
+  font-weight: 700;
+  padding: 8px 12px;
+  background-color: #0A9418;
+  border: 4px solid #06600F;
+  border-radius: 4px;
+}
+.navbar-menu {
+  display: flex;
+}
+.navbar-link {
+  padding: 22px 10px 22px 14px;
+  font-size: 18px;
+}
+.navbar-link:hover {
+  background-color: #69CF17;
+}
+.navbar-bar {
+  font-size: 40px;
+  color: #69CF17;
+  display: none;
+}
+/* navbar end */ 
+/* header */
+.header {
+  background-image: url(./images/header-bg.jpg);
+  position: relative;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.header:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.514);
+}
+.header-content {
+  z-index: 2;
+}
+.header-title {
+  color: #69CF17;
+  font-weight: 900;
+  font-size: 72px;
+}
+.header-subtitle {
+  font-size: 36px;
+  color: #69CF17;
+}
+.header-text {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 18px 0 30px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+}
+.header-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-price p {
+  font-weight: 100;
+  font-size: 50px;
+  background-color: rgba(106, 207, 23, 0.5);
+  padding: 32px 76px;
+}
+.header-price .button {
+  padding: 15px 70px;
+  background: linear-gradient(to right, #69CF17, #417D11);
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+}
+/* header end */ 
+/* menu */ 
+.menu {
+  min-height: 65px;
+  background-color: #292929;
+  padding: 20px 0;
+}
+.menu-content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  gap: 33px;
+  align-items: center;
+  margin-left: 27px;
+}
+.menu-link:hover {
+  border-bottom: 1px solid white;
+  padding-bottom: 19px;
+}
+/* menu end */
+/* burger */ 
+.burger {
+  background-color: #393636;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 30px;
+  padding: 15px 0;
+}
+.burger-card {
+  width: 370px;
+  border: 1px solid white;
+  padding: 15px;
+  background-color: #0C0C0C;
+  border-radius: 4px;
+}
+.burger-card__img {
+  position: relative;
+  height: 325px;
+}
+.burger-card__hover {
+  background-color: rgb(105, 207, 23, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  display: none;
+}
+.burger-card__img:hover .burger-card__hover {
+  display: flex;
+}
+
+.burger-card h4 {
+  font-size: 19px;
+  margin: 15px 0;
+}
+.burger-card p {
+  font-size: 19px;
+  line-height: 25px;
+  min-height: 124px;
+}
+/* burger end */ 
+/* map */ 
+.map h2 {
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
+  color: #69CF17;
+  line-height: 40px;
+}
+/* map end */
+/* footer */ 
+.footer {
+  padding: 30px 0 138px;
+  background: linear-gradient(#000000, rgb(105, 207, 23));
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-number {
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+.footer-menu {
+  width: 100%;
+  margin-top: 81px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.footer-link {
+  font-size: 20px;
+  font-family: "Roboto";
+}
+/* footer end */ 
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .navbar-bar {
+    display: flex;
+  }
+  .navbar-menu {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    text-align: center;
+  }
+  .header-price {
+    flex-direction: column;
+    gap: 15px ;
+  }
+}
+@media (max-width: 480px) {
+  .banner-bar {
+    display: flex;
+    font-size: 25px;
+  }
+  .banner-menu {
+    display: none;
+  }
+  .navbar-logo {
+    font-size: 24px;
+  }
+  .header-title {
+    font-size: 50px;
+  }
+  .map h2 {
+    font-size: 35px;
+  }
+  .burger-card {
+    max-width: 370px;
+  }
+  .burger-card img {
+    width: 100%;
+  }
+  .footer-content {
+    justify-content: space-around;
+    gap: 20px;
+  }
+}
